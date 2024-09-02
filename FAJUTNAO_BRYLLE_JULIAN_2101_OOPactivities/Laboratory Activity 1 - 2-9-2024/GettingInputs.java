@@ -1,6 +1,5 @@
 public class GettingInputs{
     public static void main(String[] args) {
-        // Get the console
         java.io.Console console = System.console();
 
         if (console == null) {
@@ -8,21 +7,21 @@ public class GettingInputs{
             return;
         }
 
-        // Prompt the user to enter details
-        String yearString = console.readLine("Enter Year (Integer): ");
+        String yearString = console.readLine("Enter Year: ");
         int year = Integer.parseInt(yearString);
 
-        String genre = console.readLine("Enter Genre (String): ");
-        String album = console.readLine("Enter Album (String): ");
-        String title = console.readLine("Enter Title (String): ");
-        String artist = console.readLine("Enter Artist (String): ");
+        String genre = console.readLine("\nEnter Genre: ");
+        String album = console.readLine("\nEnter Album: ");
+        String title = console.readLine("\nEnter Title: ");
+        String artist = console.readLine("\nEnter Artist: ");
 
-        // Print the entered details
-        System.out.println("\nEntered Details:");
-        System.out.println("Year: " + year);
-        System.out.println("Genre: " + genre);
-        System.out.println("Album: " + album);
-        System.out.println("Title: " + title);
-        System.out.println("Artist: " + artist);
+        System.out.println("\n-------------------");
+        System.out.println("\nSONG DETAILS");
+        System.out.println("\n-------------------:");
+        System.out.println("\nYear Released: " + year);
+        System.out.println("\nGenre: " + genre);
+        System.out.println("\nAlbum: " + album);
+        System.out.println("\nTitle: " + title);
+        System.out.println("\nArtist: " + artist);
     }
 }
